@@ -1,7 +1,7 @@
 package com.yin.common.entity.po;
 
 
-import com.yin.erp.base.utils.GenerateUtil;
+import com.yin.common.utils.GenerateUtil;
 import lombok.Getter;
 import lombok.Setter;
 
