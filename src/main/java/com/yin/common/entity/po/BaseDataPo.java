@@ -17,12 +17,11 @@ import java.util.Objects;
 public abstract class BaseDataPo implements Serializable {
 
     @Id
-//    @GenericGenerator(name = "system-uuid", strategy = "uuid")
-//    @GeneratedValue(generator = "system-uuid")
-//    @GeneratedValue(strategy = GenerationType.AUTO, generator = "uuid-string")
     @Column(name = "id", length = 32)
     private String id = GenerateUtil.createUUID();
 
+    @Column(name = "tn_id", length = 20)
+    private String tnId;
 
     @Override
     public boolean equals(Object o) {

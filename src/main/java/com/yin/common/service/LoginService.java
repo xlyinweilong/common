@@ -26,19 +26,19 @@ public class LoginService {
     public UserSessionBo getUserSession(HttpServletRequest request) {
         String key = "X-Token";
         String token = request.getHeader(key);
-        if (StringUtils.isBlank(token)) {
-            for (Cookie cookie : request.getCookies()) {
-                if (key.equals(cookie.getName())) {
-                    token = cookie.getValue();
-                }
-                if ("user".equals(cookie.getName())) {
-                    token = cookie.getValue();
-                }
-            }
-        }
-        if (StringUtils.isBlank(token)) {
-            token = request.getParameter("token");
-        }
+//        if (StringUtils.isBlank(token)) {
+//            for (Cookie cookie : request.getCookies()) {
+//                if (key.equals(cookie.getName())) {
+//                    token = cookie.getValue();
+//                }
+//                if ("user".equals(cookie.getName())) {
+//                    token = cookie.getValue();
+//                }
+//            }
+//        }
+//        if (StringUtils.isBlank(token)) {
+//            token = request.getParameter("token");
+//        }
         if (StringUtils.isBlank(token)) {
             return null;
         }
