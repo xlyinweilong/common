@@ -16,15 +16,11 @@ import java.util.Objects;
 
 @Data
 @MappedSuperclass
-@EntityListeners(value = {CustomerListener.class})
-public abstract class BaseDataPo implements Serializable {
+public abstract class BaseDataPo extends BaseTnPo {
 
     @Id
     @Column(name = "id", length = 32)
     private String id = GenerateUtil.createUUID();
-
-    @Column(name = "tn_id", length = 20)
-    private String tnId;
 
     @Override
     public boolean equals(Object o) {
