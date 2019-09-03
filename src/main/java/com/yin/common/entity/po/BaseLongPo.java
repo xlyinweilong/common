@@ -1,14 +1,11 @@
 package com.yin.common.entity.po;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.yin.common.listener.CustomerListener;
 import lombok.Data;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Date;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
 /**
  * @author yin.weilong

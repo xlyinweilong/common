@@ -1,12 +1,10 @@
 package com.yin.common.entity.vo.in;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.io.Serializable;
 
-@Getter
-@Setter
+@Data
 public class BasePageVo implements Serializable {
 
     private Integer pageIndex;

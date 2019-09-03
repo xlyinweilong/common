@@ -1,8 +1,7 @@
 package com.yin.common.listener;
 
-import com.yin.common.entity.po.BaseDataPo;
-import com.yin.common.entity.po.BaseLongPo;
 import com.yin.common.entity.po.BaseTnPo;
+import com.yin.common.store.TnStore;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreRemove;
@@ -29,7 +28,7 @@ public class CustomerListener {
     private void setTnId(Object source){
         if(source instanceof BaseTnPo) {
             BaseTnPo baseTnPo = (BaseTnPo) source;
-            baseTnPo.setTnId("11");
+            baseTnPo.setTnId(TnStore.tnStore.get());
         }
     }
 

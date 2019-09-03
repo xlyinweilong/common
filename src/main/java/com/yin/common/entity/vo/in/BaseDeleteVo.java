@@ -1,13 +1,11 @@
 package com.yin.common.entity.vo.in;
 
 import com.yin.common.entity.vo.BaseVo;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data
 public class BaseDeleteVo extends BaseVo {
     private List<String> ids;
 }

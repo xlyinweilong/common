@@ -1,13 +1,11 @@
 package com.yin.common.controller;
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.io.Serializable;
 
-@Setter
-@Getter
+@Data
 @Builder
 public class BaseJson implements Serializable {
 

@@ -1,17 +1,11 @@
 package com.yin.common.entity.po;
 
 
-import com.yin.common.listener.CustomerListener;
 import com.yin.common.utils.GenerateUtil;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.Column;
-import javax.persistence.EntityListeners;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import java.io.Serializable;
 import java.util.Objects;
 
 @Data

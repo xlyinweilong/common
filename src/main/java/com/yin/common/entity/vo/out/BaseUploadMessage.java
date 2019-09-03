@@ -1,7 +1,6 @@
 package com.yin.common.entity.vo.out;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.io.Serializable;
 
@@ -11,8 +10,7 @@ import java.io.Serializable;
  * @author yin.weilong
  * @date 2018.12.19
  */
-@Getter
-@Setter
+@Data
 public class BaseUploadMessage implements Serializable {
 
     /**

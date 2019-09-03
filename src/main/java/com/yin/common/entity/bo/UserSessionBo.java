@@ -1,7 +1,6 @@
 package com.yin.common.entity.bo;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,8 +10,7 @@ import java.util.List;
  *
  * @author yin
  */
-@Getter
-@Setter
+@Data
 public class UserSessionBo implements Serializable {
 
     private String id;

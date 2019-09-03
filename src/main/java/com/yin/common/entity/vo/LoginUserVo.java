@@ -1,8 +1,7 @@
 package com.yin.common.entity.vo;
 
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotBlank;
@@ -10,8 +9,7 @@ import javax.validation.constraints.NotBlank;
 /**
  * 登录用户
  */
-@Getter
-@Setter
+@Data
 public class LoginUserVo {
 
     private String name;

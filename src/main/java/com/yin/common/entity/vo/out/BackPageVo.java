@@ -1,7 +1,6 @@
 package com.yin.common.entity.vo.out;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.List;
 
@@ -11,8 +10,7 @@ import java.util.List;
  * @author yin.weilong
  * @date 2018.11.11
  */
-@Getter
-@Setter
+@Data
 public class BackPageVo<T> {
 
     private List<T> content;
