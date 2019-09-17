@@ -16,7 +16,7 @@ import java.util.Date;
 public abstract class BasePo extends BaseDataPo {
 
     @Version
-    private Long version;
+    private Long version = 0L;
 
     @Column(name = "create_date", updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
