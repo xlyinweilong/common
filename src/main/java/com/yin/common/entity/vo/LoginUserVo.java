@@ -21,7 +21,7 @@ public class LoginUserVo {
     private String username;
 
     @NotBlank
-    @Length(min = 6, max = 30, message = "密码长度需要在6到30之间")
+    @Length(min = 1, max = 30, message = "密码长度需要在1到30之间")
     private String password;
 
 }
