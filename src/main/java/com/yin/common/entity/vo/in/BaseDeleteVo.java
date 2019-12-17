@@ -8,4 +8,5 @@ import java.util.List;
 @Data
 public class BaseDeleteVo extends BaseVo {
     private List<String> ids;
+    private String id;
 }

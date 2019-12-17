@@ -1,6 +1,5 @@
 package com.yin.common.handler;
 
-import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 import com.yin.common.controller.BaseJson;
 import com.yin.common.exceptions.BaseException;
 import com.yin.common.exceptions.MessageException;
@@ -110,11 +109,11 @@ public class ControllerExceptionHandler {
      * @param e
      * @return
      */
-    @ExceptionHandler(value = MySQLIntegrityConstraintViolationException.class)
-    @ResponseBody
-    public BaseJson handleMySQLIntegrityConstraintViolationException(Exception e) {
-        return BaseJson.getError("数据已经存在");
-    }
+//    @ExceptionHandler(value = MySQLIntegrityConstraintViolationException.class)
+//    @ResponseBody
+//    public BaseJson handleMySQLIntegrityConstraintViolationException(Exception e) {
+//        return BaseJson.getError("数据已经存在");
+//    }
 
     /**
      * 唯一索引重复
