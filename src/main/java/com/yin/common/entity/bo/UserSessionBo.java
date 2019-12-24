@@ -15,6 +15,8 @@ public class UserSessionBo implements Serializable {
 
     private String id;
 
+    private String tnId;
+
     private String account;
 
     private String name;
