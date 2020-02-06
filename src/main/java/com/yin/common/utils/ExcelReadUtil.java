@@ -94,7 +94,7 @@ public class ExcelReadUtil {
         }
         try {
             if (cell.getCellType().equals(CellType.STRING)) {
-                if (StringUtils.isNotBlank(cell.getStringCellValue())) {
+                if (StringUtils.isBlank(cell.getStringCellValue())) {
                     return null;
                 }
                 return Integer.parseInt(cell.getStringCellValue());
